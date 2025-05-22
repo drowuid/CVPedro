@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+
+    <style>
+        
+        body {
+            background-color: #DCD7C9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        .menu {
+            width: 200px;
+            padding: 20px;
+            background-color: #3F4E4F;
+            height: 100vh-100px;
+        }
+
+        .menu h2 {
+            color: #DCD7C9;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 10px 0;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #DCD7C9;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #A27B5C;
+        }
+
+        .menu-img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        #about-me h2 {
+            font-size: 2em;
+
+        }
+
+        #education h2 {
+            font-size: 2em;
+
+        }
+
+        #skills h2 {
+            font-size: 2em;
+
+        }
+
+        #work h2 {
+            font-size: 2em;
+
+        }
+
+        
+        #why-hire h2 {
+            font-size: 2em;
+
+        }
+
+        /* Content Area */
+        .content {
+            flex: 1;
+            padding-top: 80px;
+            overflow-y: auto;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #2C3639;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: calc(100% - 220px);
+            background-color: #DCD7C9;
+            margin: 0;
+            padding: 20px 0;
+            z-index: 1;
+        }
+
+        h1,
+        h2 {
+            color: #2C3639;
+        }
+
+        p {
+            color: #2C3639;
+        }
+
+        /* Hide all sections by default */
+        .section {
+            display: none;
+            background-color: #A27B5C;
+            padding: 15px;
+            border-radius: 5px;
+            color: #DCD7C9;
+        }
+
+        /* Show section when targeted */
+        .section:target {
+            display: block;
+        }
+
+        /* Experience and Education styling */
+        .experience,
+        .education {
+            line-height: 1.8;
+        }
+
+        .experience h3,
+        .education h3 {
+            color: #2C3639;
+            margin-bottom: 5px;
+        }
+
+        .experience p,
+        .education p {
+            margin: 5px 0;
+        }
+
+        .experience .job-title,
+        .education .degree {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .experience .company,
+        .education .institution {
+            font-style: italic;
+            color: #4c0519;
+        }
+
+        .experience .date,
+        .education .date {
+            font-weight: bold;
+            color: #3F4E4F;
+        }
+
+        /* Personal Skills styling */
+        .skills {
+            line-height: 1.8;
+        }
+
+        .skills h3 {
+            color: #2C3639;
+        }
+
+        .skills p {
+            margin: 5px 0;
+        }
+
+        .skills .language {
+            font-weight: bold;
+            color: #3F4E4F;
+        }
+
+        /* Image styling */
+        .profile-photo {
+            width: 250px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="menu">
+        <a href="https://www.linkedin.com/in/pedro-rodrigues-604b0213b/" target="_blank">
+            <img src="output-onlinepngtools.png" alt="menu-img" class="menu-img">
+        </a>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#education">Educational Experience</a></li>
+            <li><a href="#skills">Personal Skills</a></li>
+            <li><a href="#work">Professional Experience</a></li>
+            <li><a href="#why-hire">Why Hire Me?</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content">
+        <header>
+            <h1>Curriculum Vitae - Pedro Rodrigues</h1>
+        </header>
+
+
+        <div id="about-me" class="section">
+            <h2 style="text-decoration: underline;">About Me</h2>
+            <br>
+            <img src="eu.jpg" alt="Profile Photo" class="profile-photo">
+            <hr>
+            <p style="font-size: larger;"></p><p style="color: #2f3640;"><u><b>Full Name:</b></u></p> <p>Pedro Miguel Pereira Rodrigues</p></p>
+            <p style="font-size: larger;"><p style="color: #2f3640;"><u><b>Address:</b></u></p> <p>Rua Nuno de Morais 85 1 DTO Braga (Portugal) </p></p>
+            <p style="font-size: larger;"><p style="color: #2f3640;"><u><b>Phone:</b></u></p> <p>916505181</p></p>
+            <p style="font-size: larger;"><p style="color: #2f3640;"><u><b>Email:</b></u></p><p>pmprodrigueswork@gmail.com</p></p>
+        </div>
+
+        <div id="education" class="section">
+            <h2 style="text-decoration: underline;">Educational Experience</h2>
+            <br>
+            <div class="education" style="font-size: large;">
+                <h3 class="degree">Degree in Línguas e Literaturas Europeias</h3>
+                <p class="institution">Universidade do Minho, Braga (Portugal)</p>
+                <p class="date">From 2010 to 2013 - Incomplete with two years of normal curriculum progress</p>
+            </div>
+            <br>
+            <div class="education" style="font-size: large;">
+                <h3 class="degree">Degree in Handling Suppliers/Customers Conflicts and Complaints</h3>
+                <p class="institution">Nexus, Braga (Portugal)</p>
+                <p class="date">From 2013 to 2013</p>
+            </div>
+            <br>
+            <div class="education" style="font-size: large;">
+                <h3 class="degree">High School</h3>
+                <p class="institution">Escola Secundária Carlos Amarante, Braga (Portugal)</p>
+                <p class="date">From 2008 to 2010</p>
+            </div>
+            <br>
+            <div class="education" style="font-size: large;">
+                <h3 class="degree">Basic School - Course in Administrative Practices</h3>
+                <p class="institution">Nufec - Núcleo de Formação, Estudos e Consultoria, Braga (Portugal)</p>
+                <p class="date">From 2006 to 2007</p>
+            </div>
+            <br>
+        </div>
+
+        <div id="skills" class="section">
+            <h2 style="text-decoration: underline;">Personal Skills</h2>
+            <br>
+            <div class="skills">
+                <h3>Mother Tongue(s)</h3>
+                <p class="language">Portuguese</p>
+
+                <h3>Foreign Language(s)</h3>
+                <p class="language">English</p>
+                <p class="language">Spanish</p>
+                <hr>
+                <h3>Language Proficiency</h3>
+                <br>
+                <p style="color: #3F4E4F"><strong>English:</strong></p>
+                <p><strong>- Listening:</strong> C2</p>
+                <p><strong>- Reading:</strong> C2</p>
+                <p><strong>- Spoken Interaction:</strong> C2</p>
+                <p><strong>- Spoken Production:</strong> C2</p>
+                <p><strong>- Writing:</strong> C2</p>
+                <br>
+                <p style="color: #3F4E4F"><strong>Spanish:</strong></p>
+                <p><strong>- Listening:</strong> B2</p>
+                <p><strong>- Reading:</strong> B2</p>
+                <p><strong>- Spoken Interaction:</strong> A2</p>
+                <p><strong>- Spoken Production:</strong> A2</p>
+                <p><strong>- Writing:</strong> A2</p>
+            </div>
+            <hr>
+            <br>
+            <div class="education" style="font-size: large;">
+                <h3>Communication Skills</h3>
+                <p>- Experience regarding customer service and social interaction from previous jobs.</p>
+                <p>- Great communication skills and experience using any kind of tools being it email, chat support,
+                    phone support, direct support.</p>
+                <p>- Easy to adapt to any kind circumstances in a social environment.</p>
+            </div>
+            <br>
+            <div class="education" style="font-size: large;">
+                <h3>Organisational / Managerial Skills</h3>
+                <p>- Multi functioning.</p>
+                <p>- Dynamic in all circumstances.</p>
+                <p>- Easy to adapt to any kind of work environment.</p>
+                <p>- Organized and proactive.</p>
+                <p>- Strong sense of responsibility.</p>
+                <p>- Tolerant towards stress and pressure.</p>
+            </div>
+            <br>
+            <div class="education" style="font-size: large;">
+                <h3>Job-related Skills</h3>
+                <p>- All my skills were obtained with a lot of hard work, being proactive, and, enjoying new experiences
+                    and challenges that allowed me to expand my knowledge as an employee but also as a human being.</p>
+                <p>- I consider myself to be some sort of problem-solving addict since I won't give up until I've
+                    achieved a positive solution.</p>
+                <p>- I grew up always interested in fashion and Technology, hoping someday being able to find myself
+                    more associated with the related fields.</p>
+            </div>
+        </div>
+
+
+        <div id="work" class="section">
+            <h2 style="text-decoration: underline;">Professional Experience</h2>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Technical Support</h3>
+                <p class="company">Microsoft Partner Agent</p>
+                <p class="date">14/10/2021 to 01/10/2022</p>
+                <p>- Technical support by phone, chat and email for Microsoft business partners around the world</p>
+                <p>- Issue troubleshooting using a IT ticket management system</p>
+            </div>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Technical Support</h3>
+                <p class="company">Fujitsu Group - Vodafone UK</p>
+                <p class="date">14/10/2021 to 01/10/2022</p>
+                <p>- Technical support by phone, chat and email to the Vodafone physical stores systems around the
+                    United Kingdom</p>
+                <p>- Issue troubleshooting</p>
+            </div>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Technical Support</h3>
+                <p class="company">WHIRLPOOL/INDESIT Appliances - Transcom/GiGroup</p>
+                <p class="date">14/09/2019 to 01/09/2021</p>
+                <p>- Technical support to all domestic appliances from Whirlpool/Indesit</p>
+                <p>- Customer satisfaction</p>
+            </div>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Technical Support</h3>
+                <p class="company">IOS & MacOS ENG - Randstad - Concentrix</p>
+                <p class="date">14/06/2017 to 06/2019</p>
+                <p>- Technical and hardware support to all Apple services and devices</p>
+            </div>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Technical Advisor - Retention Department</h3>
+                <p class="company">Randstad - Vodafone</p>
+                <p class="date">15/02/2017 to 31/05/2017</p>
+                <p>- Technical support</p>
+                <p>- Sales and contract processing regarding services</p>
+                <p>- Billing</p>
+            </div>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Technical Advisor - Customer Service</h3>
+                <p class="company">Randstad - Vodafone PT</p>
+                <p class="date">09/10/2015 to 15/02/2017</p>
+                <p>- Providing technical and billing support</p>
+                <p>- Processing inquiries regarding services</p>
+                <p>- Internal support</p>
+                <p>- Focusing on customer satisfaction</p>
+            </div>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Bartender</h3>
+                <p class="date">09/2011 to 01/2014</p>
+                <p>- Part-time</p>
+            </div>
+            <br>
+            <div class="experience" style="font-size: large;">
+                <h3 class="job-title">Internship</h3>
+                <p class="company">Micro-Net, Braga (Portugal)</p>
+                <p class="date">11/2006 to 12/2006</p>
+                <p>- Archive</p>
+                <p>- Processing information into the system</p>
+                <p>- Other office tasks</p>
+            </div>
+
+        </div>
+
+        <div id="why-hire" class="section">
+            <h2 style="text-decoration: underline;">Why Hire Me?</h2>
+            <br>
+            <p style="font-size: large;">Throughout my work-related journey, I've managed to acquire a great deal of
+                skills regarding tech. I've been involved in it since a young age when I took a basic Computing course
+                in school.</p>
+            <p style="font-size: large;">I consider myself to be able to work with any type of tech-related hardware or
+                software since I've never encountered any barriers besides merging in a complex way into coding.</p>
+            <p style="font-size: large;">Other skills might also involve:</p>
+            <ul style="color: #3F4E4F; font-size: large;">
+                <li>Internet security</li>
+                <li>Website moderation</li>
+                <li>Content management</li>
+                <li>Creative writing</li>
+                <li>Office (Word, PowerPoint, Excel, Outlook, Frontpage)</li>
+                <li>Knowledgeable in handling basically any kind of IOS, MacOS, Windows, and Android apps or features
+                </li>
+                <li>Basic knowledge in Visual Basic and C++</li>
+            </ul>
+            <p style="font-size: large;">Driving licence: B1, B</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
